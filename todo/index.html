@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Artrium ToDo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <div id="tintious">
+            <form id="searchForm">
+                <img src="search.png">
+                <input type="text" autocomplete="off" placeholder="Search Google" id="search">
+            </form>
+            <a href="https://github.com/ldhan0715/artrium-todo" class="link" title="Click to Check Out Source Code." target="_blank">···</a><br>
+            <time>
+                <span id="clock" title="Click To Change Time Format.">00:00</span>
+            </time>
+            <form id="nameForm">
+                <input type="text" autocomplete="off" placeholder="What's Your Name?" class="input" required>
+            </form>
+            <div id="greeting"></div>
+            <form id="toDoForm">
+                <input type="text" autocomplete="off" placeholder="Your Goal Today?" class="input" required>
+            </form>
+            <ul id="toDoList"></ul>
+            <span id="weather" title="Geolocation Provided by OpenWeatherMap"></span><br>
+        </div>
+        <script src="clock.js"></script>
+        <script src="greeting.js"></script>
+        <script src="todo.js"></script>
+        <script src="background.js"></script>
+        <!-- <script src="weather.js"></script> -->
+        <script src="disableMobile.js"></script>
+        <script src="search.js"></script>
+    </body>
+</html>

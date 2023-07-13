@@ -1,0 +1,164 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+* {
+    font-family: -apple-system, "Inter", sans-serif;
+    outline: none;
+}
+
+body {
+    display: flex;
+    background-color: #2c2c2c;
+    color: white;
+    font-size: 2rem;
+    font-family: -apple-system, "Inter", "Raleway", "Trebuchet MS", sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0,0,0,.2);
+    margin-top: 230px;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#tintious {
+    width: 70%;
+}
+
+time {
+    font-weight: 510;
+    font-size: 6rem;
+    cursor: pointer;
+    display: inline-block;
+    text-shadow: 2.5px 2.5px 0px rgba(0,0,0,.55);
+    transition: all .2s;
+    transition-delay: .1s;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+time:hover {
+    transform: translateY(-10px);
+}
+
+.link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+#searchForm>img {
+    position: absolute;
+    width: auto;
+    height: 25px;
+    left: 0;
+    top: 0;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+
+#search {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    margin: 15px;
+    margin-left: 35px;
+    width: 220px;
+    height: 25px;
+    background: none;
+    border: none;
+    border-bottom: 1.5px solid rgb(147,150,157);
+    font-family: -apple-system, "Inter", "Raleway", "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+    transition: all .35s ease-in-out;
+}
+
+#search:focus {
+    width: 270px;
+    border-bottom: 1.5px solid white;
+}
+
+#weather {
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    bottom: 5px;
+}
+
+#toDoList li {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 80px;
+    font-size: 1.5rem;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.input {
+    display: inline-block;
+    border: none;
+    background: none;
+    border-bottom: 1.5px solid #b2bec3;
+    width: 250px;
+    font-size: 1.3rem;
+    font-family: -apple-system, "Inter", "Raleway", "Trebuchet MS", sans-serif;
+    text-shadow: 1.5px 1.25px 0px rgba(0,0,0,.2);
+    color: white;
+    text-align: center;
+    transition: all .35s ease-in-out;
+    height: 30px;
+    margin-top: 50px;
+}
+
+.input[type=text]:focus {
+    width: 300px;
+    border-bottom: 1.5px solid white;
+    transform: translateY(-15px);
+}
+
+.hidden {
+    display: none;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 170vh;
+    z-index: -1;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+  
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+@keyframes fadeIn {
+    from {
+        filter: blur(0px);
+    }
+    to {
+        filter: blur(6px);
+    }
+}
